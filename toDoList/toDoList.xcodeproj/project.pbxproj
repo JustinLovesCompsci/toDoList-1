@@ -14,6 +14,8 @@
 		727E8B251A114BE900C48BAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727E8B241A114BE900C48BAD /* Images.xcassets */; };
 		727E8B281A114BE900C48BAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727E8B261A114BE900C48BAD /* LaunchScreen.xib */; };
 		727E8B341A114BE900C48BAD /* toDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E8B331A114BE900C48BAD /* toDoListTests.m */; };
+		AA9DB63D1A12E56300BA6CCC /* DLItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9DB63C1A12E56300BA6CCC /* DLItem.m */; };
+		AA9DB6401A12E6D400BA6CCC /* DLSchoolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9DB63F1A12E6D400BA6CCC /* DLSchoolItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		727E8B2D1A114BE900C48BAD /* toDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		727E8B321A114BE900C48BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		727E8B331A114BE900C48BAD /* toDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toDoListTests.m; sourceTree = "<group>"; };
+		AA9DB63B1A12E56300BA6CCC /* DLItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLItem.h; sourceTree = "<group>"; };
+		AA9DB63C1A12E56300BA6CCC /* DLItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLItem.m; sourceTree = "<group>"; };
+		AA9DB63E1A12E6D400BA6CCC /* DLSchoolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSchoolItem.h; sourceTree = "<group>"; };
+		AA9DB63F1A12E6D400BA6CCC /* DLSchoolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSchoolItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		727E8B161A114BE900C48BAD /* toDoList */ = {
 			isa = PBXGroup;
 			children = (
+				AA9DB63A1A12E51100BA6CCC /* dataModel */,
 				727E8B1B1A114BE900C48BAD /* AppDelegate.h */,
 				727E8B1C1A114BE900C48BAD /* AppDelegate.m */,
 				727E8B1E1A114BE900C48BAD /* ViewController.h */,
@@ -117,6 +124,17 @@
 				727E8B321A114BE900C48BAD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA9DB63A1A12E51100BA6CCC /* dataModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA9DB63B1A12E56300BA6CCC /* DLItem.h */,
+				AA9DB63C1A12E56300BA6CCC /* DLItem.m */,
+				AA9DB63E1A12E6D400BA6CCC /* DLSchoolItem.h */,
+				AA9DB63F1A12E6D400BA6CCC /* DLSchoolItem.m */,
+			);
+			name = dataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9DB6401A12E6D400BA6CCC /* DLSchoolItem.m in Sources */,
 				727E8B201A114BE900C48BAD /* ViewController.m in Sources */,
 				727E8B1D1A114BE900C48BAD /* AppDelegate.m in Sources */,
+				AA9DB63D1A12E56300BA6CCC /* DLItem.m in Sources */,
 				727E8B1A1A114BE900C48BAD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +434,7 @@
 				727E8B391A114BE900C48BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		727E8B3A1A114BE900C48BAD /* Build configuration list for PBXNativeTarget "toDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +443,7 @@
 				727E8B3C1A114BE900C48BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
