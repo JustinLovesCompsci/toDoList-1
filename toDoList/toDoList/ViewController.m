@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DLDataModel.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark UITableView datasource
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [[[DLDataModel sharedInstance] currentList] count];
 }
 
 @end
