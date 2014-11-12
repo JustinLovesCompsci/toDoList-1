@@ -24,6 +24,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self printHelloWorld];
+}
+
+-(void) printHelloWorld{
+    NSLog(@"Hello World");
+    
+    // print formatted strings
+    NSString *string = @"Hola Mundo!";
+    NSLog(@"%@", string);
+    
+    char letter = 's';
+    NSLog(@"My favorite letter is %c", letter);
+    
+    int n = 11;//this is a primitive
+    NSLog(@"I am %d years old", n);
+    
+    NSInteger number = 7;//this is a object
+    NSLog(@"My object integer value is %ld", (long) number);
+    
+    // you should use NSInteger and not int
+    
+    n = 24;
+    n = 11;
+    number = 8;
+    
+    // static arrays
+    NSArray *basicArray1 = [NSArray arrayWithObjects:@"cat", @"dog", nil];
+    NSArray *basicArray2 = @[@"rat", @"fog"];
+    NSLog(@"%@", basicArray1);
+    NSLog(@"%@", basicArray2);
+    
 }
 
 - (void)didReceiveMemoryWarning {
